@@ -1,0 +1,300 @@
+/* import font ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+/* ================ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */  
+header {
+    display: inline;
+}    
+nav {
+    background-color: #F6BD60;
+    padding: 1px;
+    position: sticky;
+    z-index: 99;
+    top: 0px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+nav ul {
+    margin-left: 30px;
+}
+nav li {
+    display: inline;
+    margin-right: 33px;
+    list-style: none;
+}
+nav a {
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #F7EDE2;
+}
+/* ========== */
+
+/* HOME */
+.home-container {
+    width: 100%;
+    height: 706px;
+    background-color: #F7EDE2;
+    display: flex;
+}
+.home-container aside img {
+    position: relative;
+    bottom: 0px;
+    max-height: 100%;
+}
+.home-container aside {
+    box-sizing: border-box;
+    width: 50%;
+    min-height: 0px;
+    padding: 100px 0px 0px 50px;
+}
+.home-container .text-container {
+    width: 50%;
+}
+.home-container .text-container h1 {
+    position: relative;
+    max-width: max-content;
+    margin: 0px;
+    top: 15%;
+    left: 15%;
+
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 114px;
+    color: #F6BD60;
+}
+.home-container .text-container h2 {
+    margin: 0;
+    max-width: max-content;
+    position: relative;
+    top: 15%;
+    left: 15%;
+
+    font-family: Ubuntu Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 65px;
+    color: #F6BD60;
+}
+.home-container .text-container .koma {
+    font-size: 80px;
+}
+.home-container .text-container .underline {
+    text-decoration: underline;
+}
+/* =============== */
+
+/* topContent */
+.topContent {
+    /* border: 2px solid black; */
+    grid-area: topcontent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.topContent h1 {
+    margin: 0;
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 57px;
+    align-items: center;
+    text-decoration-line: underline;
+
+}
+/* =============== */
+
+/* PROFILE */
+.profile-container .topContent h1 {
+    color: #F8EEE2;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "topcontent topcontent"
+    "profileContent profileImage";
+
+    height: 600px;
+    background-color: #F28482;
+}
+.profile-container .profileContent,
+.profile-container .profileImage {
+    display: flex;
+    align-items: center;
+}
+.profile-container .profileImage{
+    justify-content: center;
+}
+.profile-container .profileContent article {
+    margin: 0px 0px 70px 70px;
+    width: 530px;
+    /* border: 2px solid black; */
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    text-align: justify;
+
+    color: #F8EEE2;
+}
+.profile-container .profileImage aside img {
+    display: flex;
+    width: 300px;
+    /* border: 2px solid black; */
+    max-height: max-content;
+}
+/* ================ */
+
+/* EDUCATION */
+.education-container .topContent {
+    color: #84A59D;
+}
+.education-container {
+    background-color: #F7EDE2;;
+    height: 600px;
+}
+.education-container .list-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 87px auto;
+}
+.education-container .list-container .eduContent {
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    height: 100px;
+}
+.education-container .list-container .eduContent .eduTitle {
+    font-family: Ubuntu Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #000000;
+}
+.education-container .list-container .eduContent .tahunContent {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+}
+.education-container .list-container .eduContent .midRounder {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-color: #84A59D;
+    border-radius: 50%;
+}
+.education-container .list-container .eduContent .midLine {
+    display: block;
+    width: 2.5px;
+    height: 100%;
+    background-color: #84A59D;
+    transform: translate(8px, -7px);
+}
+/* ======================== */
+
+/* SKILLS */
+.skills-container .topContent {
+    color: #F7EDE2;
+}
+.skills-container {
+    height: 627px;
+    background-color: #F5CAC3;
+}
+.skillsIcon-container {
+    display: grid;
+    width: 75%;
+    margin: 80px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 3rem;
+    background-color: 2px solid black;
+}
+.skillsContent {
+    margin: auto;
+}
+.skillsContent p {
+    margin: 9px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    color: #F7EDE2;
+}
+.skillsContent .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skillsContent .icon img {
+    width: 8rem;
+    height: 8rem;
+}
+/* ======================== */
+
+/* Contact */
+.contact-container .topContent {
+    color: #84A59D;
+}
+.contact-container {
+    height: 400px;
+    background-color:#F7EDE2;
+}
+.contactList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60%;
+    column-gap: 2rem;
+    margin: 70px auto 0px;
+}
+.contactContent .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactContent .icon img {
+    height: 90px;
+    width: 90px;
+}
+.contactContent .contactName {
+    margin: 5px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #84A59D;
+}
+.contactContent:hover {
+    transform: scale(1.25);
+}
+
+
